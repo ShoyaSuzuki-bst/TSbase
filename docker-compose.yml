@@ -1,0 +1,9 @@
+version: '3'
+volumes:
+  bundle:
+  postgres:
+services:
+  server:
+    build: ./
+    volumes: 
+      - ./:/usr/src/app
